@@ -8,7 +8,7 @@ function ClozeCard(text, cloze) {
 	this.cloze = cloze;
 	this.partial = function() {
 		if (text.indexOf(cloze) != -1) {
-			var result = text.replace(cloze, "");
+			var result = text.replace(cloze, "______");
 			return result;
 		} else {
 			console.log("Cloze is not present in full text");
